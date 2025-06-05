@@ -14,8 +14,22 @@ You can use RHEL 8, or one of the cloud distributions of RHEL. Personally, I lik
 
 https://developers.redhat.com/products/rhel/download#getredhatenterpriselinux7163
 
+![ISO Download Image](images/get_iso.png)
+
+## Generate the manifest
+Sometimes with Red Hat products having a subscription isn't enough, and we have to directly load the application entitlement into the application. Ansible is one of those products.
+
+The process is actually pretty straight forward once you've done it a few times. For the sake of context, what we are doing is packaging a subscription into a manifest file. We can then download it, and when the time comes, we can load this into the Automation Platform.
+
+1. Log into (https://access.redhat.com)
+2. Select "Subscriptions" from the top left window.
+![RH Subscriptions](images/rh_subscriptions.png)
+3. 
+
 ## Create the VM
 The sizing I will use for the VM is a 4xvCPU with 16GB RAM. I'll be using the [Proxmox](https://www.proxmox.com/en/) hypervisor.
+
+
 
 ## Containerised all in one installation of AAP v2.5
 In days gone by, to install EDA, you probably had 3 VM's. 
